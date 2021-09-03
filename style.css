@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Montserrat';
+	overflow-x: hidden;
+}
+
+#title {
+	display: flex;
+	font-size: 8.5vw;
+	gap: 10%;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	cursor: default;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
+}
+
+.hex.top {
+	float: left;
+	border-right: 30px solid currentColor;
+	border-top: 52px solid transparent;
+	border-bottom: 52px solid transparent;
+	transition: 0.5s;
+}
+.hex.middle {
+	float: left;
+	width: 60px;
+	height: 104px;
+	background-color: currentColor;
+	border: transparent;
+	transition: 0.5s;
+}
+.hex.bottom {
+	float: left;
+	border-left: 30px solid currentColor;
+	border-top: 52px solid transparent;
+	border-bottom: 52px solid transparent;
+	transition: 0.5s;
+}
+
+#hex {
+	transform: scale(2);
+	margin-top: 10%;
+	margin-bottom: 3%;
+	color: #ff816b;
+}
+
+#box-title {
+	flex-direction: column;
+	flex-direction: row;
+}
+
+.title {
+	font-family: 'Montserrat';
+}
+
+.box {
+	position: absolute;
+	width: 34px;
+	height: 43px;
+	background-color: #ABFFE5;
+	border-left: solid 1px black;
+	transform: skew(30.8deg, -39deg) translate(72.6px, 55.1px);
+	transition: 0.5s;
+}
+.box-2 {
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	background-color: #5cff80;
+	border-bottom: solid 1px black;
+	transform: skew(-30deg, 0deg) translate(20.8px, -19.8px);
+	transition: 0.5s;
+}
+.box-3 {
+	position: absolute;
+	width: 78px;
+	height: 20px;
+	background-color: #f4ff6b;
+	border-top: solid 1px black;
+	transform: skew(30deg, 0deg) translate(32.2px, 75.6px) rotate(-41deg);
+	transition: 0.5s;
+}
+
+#language {
+	position: fixed;
+	border: solid 5px white;
+	background-color: black;
+	color: white;
+	font-family: 'Montserrat';
+	font-size: 1.3vw;
+	width: 5%;
+	height: 5%;
+	cursor: pointer;
+}
+
+#char1, #char2, #char3, #catcher {
+	transition: 0.5s;
+}
